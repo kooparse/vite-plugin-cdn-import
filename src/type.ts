@@ -1,4 +1,3 @@
-
 export interface Module {
     name: string
     var: string
@@ -9,4 +8,5 @@ export interface Module {
 export interface Options {
     modules: (Module | ((prodUrl: string) => Module))[]
     prodUrl?: string
+    target?: string
 }
